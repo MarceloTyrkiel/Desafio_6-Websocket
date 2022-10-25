@@ -1,0 +1,13 @@
+
+
+<div id="chat_dashboard">
+{{#if messages.length}}
+    {{#each messages}}
+    <div class="chat-message d-flex justify-content-between mt-1">
+        <p class="chat-message-text">{{this.mensaje}}</p>
+        <p class="chat-message-date">{{this.createdAt}}</p>
+    </div>
+    {{/each}}
+{{/if}}
+</div>
+
